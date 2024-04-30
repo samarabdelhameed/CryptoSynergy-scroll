@@ -2,6 +2,8 @@
 
 ![CryptoSynergy Logo](https://github.com/samarabdelhameed/pics/blob/main/Blue%20Modern%20Vezzra%20Modern%20Technology%20Logo.png)
 
+![CryptoSynergy digramo](https://github.com/samarabdelhameed/pics/blob/main/CryptoSynergy.png)
+
 **CryptoSynergy** revolutionizes the cryptocurrency investment process by enabling users to craft diversified token portfolios with ease. Our platform leverages NFT ownership and exciting raffle rewards, empowering you to unleash the power of decentralized finance (DeFi) effectively.
 
 ### Features
