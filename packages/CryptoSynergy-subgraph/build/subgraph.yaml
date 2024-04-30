@@ -1,0 +1,51 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: TokenKrafterFactory
+    network: base-testnet
+    source:
+      address: "0x283e267a411a7bc5d37c25528a0b6aa3ba9c6719"
+      abi: TokenKrafterFactory
+      startBlock: 13484050
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Account
+        - Bucket
+      abis:
+        - name: TokenKrafterFactory
+          file: TokenKrafterFactory/abis/TokenKrafterFactory.json
+      eventHandlers:
+        - event: BucketCreated(indexed address,indexed
+            address,string,string,string,(address,uint256)[])
+          handler: handleBucketCreated
+      file: TokenKrafterFactory/TokenKrafterFactory.wasm
+templates:
+  - kind: ethereum
+    name: TokenKrafterBucket
+    network: base-testnet
+    source:
+      abi: TokenKrafterBucket
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Allocation
+        - Investment
+        - Withdrawal
+      abis:
+        - name: TokenKrafterBucket
+          file: TokenKrafterBucket/abis/TokenKrafterBucket.json
+      eventHandlers:
+        - event: Invested(indexed address,indexed address,uint256,uint256,(address,uint256)[])
+          handler: handleInvested
+        - event: Rebalanced(indexed address,(address,uint256)[])
+          handler: handleRebalanced
+        - event: Withdraw(indexed address,uint256)
+          handler: handleWithdraw
+      file: templates/TokenKrafterBucket/TokenKrafterBucket.wasm

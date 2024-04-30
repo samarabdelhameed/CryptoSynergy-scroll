@@ -1,0 +1,48 @@
+type Account @entity(immutable: true) {
+	id: Bytes!
+	createdBuckets: [Bucket!]! @derivedFrom(field: "creator")
+	investments: [Investment!]! @derivedFrom(field: "investor")
+	withdrawals: [Withdrawal!]! @derivedFrom(field: "investor")
+}
+
+type TokenAllocation @entity(immutable: true) {
+	id: ID!
+	token: Bytes!
+	weightage: BigInt!
+}
+
+type Bucket @entity(immutable: true) {
+	id: Bytes!
+	creator: Account!
+	name: String!
+	description: String!
+	tokenURI: String!
+	createdAt: BigInt!
+	tokenAllocations: [TokenAllocation!]!
+	investments: [Investment!]! @derivedFrom(field: "bucket")
+	withdrawals: [Withdrawal!]! @derivedFrom(field: "bucket")
+}
+
+type Allocation @entity(immutable: true) {
+	id: ID!
+	token: Bytes!
+	amount: BigInt!
+}
+
+type Investment @entity(immutable: true) {
+	id: ID!
+	bucket: Bucket!
+	investor: Account!
+	investmentToken: Bytes!
+	investmentAmount: BigInt!
+	allocations: [Allocation!]!
+	investedAt: BigInt!
+}
+
+type Withdrawal @entity(immutable: true) {
+	id: ID!
+	bucket: Bucket!
+	investor: Account!
+	amounts: [Allocation!]!
+	withdrawnAt: BigInt!
+}
