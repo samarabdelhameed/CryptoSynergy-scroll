@@ -52,7 +52,16 @@ https://alfajores.celoscan.io/address/0x9abc24f61d4ea7f17db15f2b022096ff174fb312
 TokenKrafterFactory
 https://goerli.basescan.org/address/0x283e267a411a7bc5d37c25528a0b6aa3ba9c6719
 
-
+## CryptoSynergy-subgraph
+cd CryptoSynergy-subgraph
+yarn install
+	"codegen": "graph codegen",
+		"build": "graph build",
+		"deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ token-krafter-subgraph",
+		"create-local": "graph create --node http://localhost:8020/ token-krafter-subgraph",
+		"remove-local": "graph remove --node http://localhost:8020/ token-krafter-subgraph",
+		"deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 token-krafter-subgraph",
+		"test": "graph test"
 
 ### Setup and Installation
 
