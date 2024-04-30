@@ -1,4 +1,4 @@
-# Token Krafters Contracts
+# Token CryptoSynergy Contracts
 
 ## Arbitrum Goerli
 
