@@ -2,7 +2,9 @@
 
 ![CryptoSynergy Logo](https://github.com/samarabdelhameed/pics/blob/main/Blue%20Modern%20Vezzra%20Modern%20Technology%20Logo.png)
 
-![CryptoSynergy digramo](https://github.com/samarabdelhameed/pics/blob/main/CryptoSynergy.png)
+[![Video Label](https://www.youtube.com/watch?v=7iRk961zYC8 "Click to Watch!")
+
+
 
 **CryptoSynergy** revolutionizes the cryptocurrency investment process by enabling users to craft diversified token portfolios with ease. Our platform leverages NFT ownership and exciting raffle rewards, empowering you to unleash the power of decentralized finance (DeFi) effectively.
 
@@ -22,34 +24,33 @@
 - Uniswap on Arbitrum Goerli Testnet
 - Polygon Mumbai Testnet
 - scroll deploy 
-- scroll best use 
+- scroll
 
 
 # Token CryptoSynergy Contracts
 
 ## Arbitrum Goerli
 
-TokenKrafterFactory
+
 https://goerli.arbiscan.io/address/0x5fb1633b93091dacf1d235e5e8dd57eec6d9a01c
 
 ## Polygon Mumbai
 
-TokenKrafterFactory
+
 https://mumbai.polygonscan.com/address/0x1226FEf96A2f3c3d2d1d0522d2AFA580a9BF726e
 
 ## Scroll Sepolia
 
-TokenKrafterFactory
+
 https://sepolia-blockscout.scroll.io/address/0x041916125514fbd39a6b192a98aec5dc519dd4b0
 
 ## Celo
 
-TokenKrafterFactory
+
 https://alfajores.celoscan.io/address/0x9abc24f61d4ea7f17db15f2b022096ff174fb312
 
 ## Base
 
-TokenKrafterFactory
 https://goerli.basescan.org/address/0x283e267a411a7bc5d37c25528a0b6aa3ba9c6719
 
 ## CryptoSynergy-subgraph
